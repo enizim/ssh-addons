@@ -1,0 +1,75 @@
+name: SSH Smart Home Dashboard
+version: "0.29.1"
+slug: ssh_dashboard
+image: "ghcr.io/enizim/ssh-dashboard-{arch}"
+description: >-
+  Multi-user smart-home dashboard for Home Assistant, with per-room permissions,
+  cameras, and Arabic/English support.
+url: https://github.com/enizim/ssh-addons
+
+# Installed from a prebuilt private image; see the private repository for the source.
+arch:
+  - amd64
+
+boot: auto
+startup: services
+
+# Grants SUPERVISOR_TOKEN and access to Home Assistant via http://supervisor/core.
+# This is what replaces the Long-Lived Access Token: the Supervisor issues this one,
+# rotates it, and revokes it when the add-on stops.
+homeassistant_api: true
+
+# Direct port rather than Ingress, deliberately — see DOCS.md. The dashboard has its
+# own accounts (name + 4-digit PIN) with per-room permissions, so putting it behind
+# Ingress would mean every family member also needs a Home Assistant login.
+ports:
+  8099/tcp: 8099
+ports_description:
+  8099/tcp: Dashboard web interface
+
+options:
+  log_level: info
+  trust_proxy: 0
+  require_access_for_login: false
+  access_team_domain: ""
+  access_aud: ""
+  notify_secret: ""
+  support_name: ""
+  support_phone: ""
+  support_whatsapp: ""
+  support_email: ""
+  support_hours: ""
+
+schema:
+  log_level: list(debug|info|warning|error)
+  # Number of reverse proxies in front. 1 when reached through a Cloudflare Tunnel or
+  # similar; 0 when reached directly, since trusting X-Forwarded-* with nothing in
+  # front would let any caller forge its own address and protocol.
+  trust_proxy: int(0,5)
+  # Refuse PIN sign-in to requests that did not come through Cloudflare Access.
+  # Turn on once /api/* bypasses Access for the mobile apps.
+  require_access_for_login: bool
+  # Cloudflare Zero Trust team domain, e.g. yourteam.cloudflareaccess.com.
+  # Required when require_access_for_login is on — the identity token is verified
+  # against this team's signing keys, not merely checked for presence.
+  access_team_domain: str?
+  # Optional Application Audience (AUD) tag, scoping the token to this application.
+  access_aud: str?
+  # Shared secret Home Assistant sends with each alert it posts to /api/notify.
+  # Required for push notifications; while empty the endpoint refuses everything,
+  # because it can make every phone in the house buzz and being on the LAN is not a
+  # credential. Use a long random string and put the same value in secrets.yaml.
+  notify_secret: password?
+  # The installer's details, shown read-only on the Contact us page. Set once per install
+  # here rather than in the app, where the customer - usually an admin - could change them.
+  # Phone numbers in international form, e.g. +966 5x xxx xxxx; WhatsApp is often the same.
+  support_name: str?
+  support_phone: str?
+  support_whatsapp: str?
+  support_email: str?
+  support_hours: str?
+  # No go2rtc options any more. Cameras now reach the dashboard through Frigate, which
+  # carries its own go2rtc, and Home Assistant's Frigate integration - so a separate
+  # go2rtc address here only invited a second process to hold sessions on cameras that
+  # had already shown they cannot spare them. The server still honours SSH_GO2RTC_URL
+  # if it is set by hand, and is simply off without it.
