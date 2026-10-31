@@ -1,5 +1,9 @@
 # What's new
 
+## 0.29.3
+
+- Behind-the-scenes improvements to how updates are delivered.
+
 ## 0.29.2
 
 - Behind-the-scenes improvements to how updates are delivered.
