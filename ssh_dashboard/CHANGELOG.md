@@ -1,5 +1,17 @@
 # What's new
 
+## 0.29.6
+
+- Behind-the-scenes improvements.
+
+## 0.29.5
+
+- Saving a long camera clip is more reliable on a slow connection.
+
+## 0.29.4
+
+- Phone notifications now have one switch: on means every alert your account can see.
+
 ## 0.29.3
 
 - Behind-the-scenes improvements to how updates are delivered.
