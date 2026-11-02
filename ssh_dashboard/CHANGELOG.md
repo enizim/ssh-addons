@@ -1,5 +1,27 @@
 # What's new
 
+## 0.30.4
+
+- Your favourites are now safe if the connection drops while the page is opening.
+
+## 0.30.3
+
+- Pages fit better on a phone-sized browser.
+
+## 0.30.2
+
+- The Music page no longer offers speakers that are switched off.
+
+## 0.30.1
+
+- The music bar no longer hides behind the left menu when the menu is pinned open.
+- Empty music lists no longer appear on the Music page.
+
+## 0.30.0
+
+- Radio is now on the Music page: Holy Quran, news and Arabic music stations, with no
+  subscription.
+
 ## 0.29.6
 
 - Behind-the-scenes improvements.
