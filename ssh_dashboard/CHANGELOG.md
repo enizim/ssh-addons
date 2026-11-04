@@ -1,5 +1,9 @@
 # What's new
 
+## 0.31.2
+
+- Maintenance: the add-on is packaged more compactly. Nothing changes on screen.
+
 ## 0.31.1
 
 - "Lights off" in a room now switches off every light there, including one that a wall
