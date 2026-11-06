@@ -1,5 +1,10 @@
 # What's new
 
+## 0.32.2
+
+- Maintenance: tighter checks on who may operate a camera's own settings. Nothing changes on
+  screen.
+
 ## 0.31.3
 
 - Phone presence (home / away) is ready for a coming Home Assistant change. Each account that
