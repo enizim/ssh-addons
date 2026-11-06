@@ -1,5 +1,11 @@
 # What's new
 
+## 0.31.3
+
+- Phone presence (home / away) is ready for a coming Home Assistant change. Each account that
+  shares its location now appears in Home Assistant as a device named "SSH – <name>". Nothing
+  changes in the app.
+
 ## 0.31.2
 
 - Maintenance: the add-on is packaged more compactly. Nothing changes on screen.
