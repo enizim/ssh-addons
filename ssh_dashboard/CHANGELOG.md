@@ -1,5 +1,11 @@
 # What's new
 
+## 0.33.0
+
+- New for administrators: Settings → Automations. Turn any of your home's automations on or off,
+  and see when each one last ran. To change what an automation does, use Home Assistant.
+- Tighter checks on device commands. Nothing else changes on screen.
+
 ## 0.32.2
 
 - Maintenance: tighter checks on who may operate a camera's own settings. Nothing changes on
