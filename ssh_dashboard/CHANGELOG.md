@@ -1,5 +1,17 @@
 # What's new
 
+## 0.34.0
+
+- Notifications are now personal. Each person chooses the devices they follow (Settings →
+  Notifications), and hears about those devices only. Danger alerts, such as smoke, gas, water
+  leaks or the alarm, still reach everyone. Low-battery notices go to administrators.
+- Administrators keep the devices they were already notified about.
+
+## 0.33.1
+
+- Music: a speaker placed in a room can now play music and radio for everyone given that room.
+  Speakers that can't play music from the app (such as Echo) are no longer offered.
+
 ## 0.33.0
 
 - New for administrators: Settings → Automations. Turn any of your home's automations on or off,
