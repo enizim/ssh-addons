@@ -1,5 +1,148 @@
 # What's new
 
+## 0.42.0
+
+- Energy: the forecast for the month now includes the electricity company's meter fee (15 SAR plus VAT by
+  default; it can be changed in Settings → Home).
+
+## 0.41.0
+
+- Names: every room and device can have an Arabic and an English name. Each person sees the names in their
+  own app language, and alerts use the reader's language. Existing names are kept.
+
+## 0.40.10
+
+- Energy: a car charger has its own line under "By room", instead of being counted as "Not measured".
+
+## 0.40.9
+
+- Security: camera pictures can no longer be opened from the home network without signing in to the app.
+
+## 0.40.8
+
+- Water: correcting a tank's full depth no longer needs its history cleared.
+
+## 0.40.7
+
+- Water: a tank's level is measured from the water's depth, so it is right even when the sensor's own
+  percentage isn't set up.
+
+## 0.40.6
+
+- Rooms: scripts sit with the scenes, and automations have their own section with an on/off switch.
+
+## 0.40.5
+
+- Devices: a tap switches a light, fan or switch; press and hold opens its controls.
+- Lights, fans and switches that only turn on and off get one large switch in their controls.
+- TVs: the volume buttons line up.
+
+## 0.40.4
+
+- Notifications: system restarts no longer appear in the inbox.
+- Clearer wording on empty pages and in settings.
+
+## 0.40.3
+
+- Water: clearing a tank's history asks for your code first.
+
+## 0.40.2
+
+- Athan: while it plays, Stop also shows inside any device's controls, including the speaker playing it.
+
+## 0.40.1
+
+- Water: a tank's settings now have Clear history, to start its figures again from now, for example once
+  its sensor is fixed in the tank.
+
+## 0.40.0
+
+- Usage: Energy is now Usage, with Electricity and Water side by side. Water shows how many days of water
+  are left, water used today and each day of the week, each tank's level over the week, and when the tanks
+  were last filled. It works from tank level sensors, or from a water meter if the home has one.
+- Water tanks: a tank's level sensor shows as one card in its room, with the level, litres when the
+  tank's capacity is set (in the sensor's settings), and whether it is low. A low tank also shows on Home.
+
+## 0.39.8
+
+- A lock's recent activity shows who locked or unlocked it from the app. Unlocking at the door (fingerprint,
+  code, key) shows no name, because the lock doesn't tell the system who it was.
+
+## 0.39.7
+
+- A door sensor linked to a lock is called by the lock's name everywhere: in the alarm's "Open now" and
+  "Close these first", on Home, and in the alarm alert.
+
+## 0.39.6
+
+- Disarm with the same code you sign in with. An administrator can turn on "Ask for the code to disarm"
+  in Settings → Users & access; arming stays one tap. Five wrong codes pause that person for a few
+  minutes, for signing in too.
+
+## 0.39.5
+
+- The alarm says which doors are open, and why a mode won't arm ("Close these first").
+- Alarm codes: an administrator can give each person a code for disarming, and turn on "Ask for a
+  code to disarm". Five wrong codes pause disarming for 5 minutes.
+- On the way in, 30 seconds to disarm (the usual alarm standard), in every mode.
+
+## 0.39.4
+
+- While the alarm is going off, the Security page shows Disarm.
+- The alarm alert reaches each phone in the language that phone's app uses (with app 1.0.61).
+
+## 0.39.3
+
+- Radio stations show their logos.
+- Four stations that had stopped playing are back: Mishary Alafasy, BBC Arabic, Monte Carlo
+  Doualiya and Saudia Radio (now on 96.2).
+
+## 0.39.2
+
+- Each album in My music shows how many tracks it has.
+
+## 0.39.1
+
+- Albums open: tap one in My music to see its tracks, play the whole album, shuffle it, or start
+  from any track.
+
+## 0.39.0
+
+- Radio on Home: a new Music section under Scenes with your favourite stations. One tap plays on
+  your speaker. Star the stations you want on the Music page.
+- A cleaner Music page: what's playing and the speaker at the top, then two tabs, Radio and
+  My music. Stations are small tiles by group, your albums show their covers, and one Shuffle
+  all button plays everything.
+
+## 0.38.0
+
+- One alarm for the home. The Security page shows the home's alarm alone, with Away, Home and
+  Night, and everyone in the house can arm and disarm it.
+- When the alarm goes off, every phone gets a loud alert saying which door set it off.
+
+## 0.37.1
+
+- While the Athan plays, the volume on the Athan page changes it straight away (Sonos speakers).
+  Each speaker goes back to its own volume afterwards.
+
+## 0.37.0
+
+- The Athan can be stopped: a bar at the top of every screen while it plays, with a Stop button,
+  for anyone who can use that speaker. Music carries on afterwards.
+- Prayer times in 12-hour form, and a new look for the Athan page.
+
+## 0.36.0
+
+- New for administrators: the Athan at prayer times. Settings → Athan & sounds shows today's
+  times for your home's location, by the Umm al-Qura calendar. Choose the speakers, the volume and
+  the prayers. Music on those speakers pauses for the Athan and carries on afterwards.
+- Your choices on that page are now kept.
+
+## 0.35.0
+
+- New for administrators: Settings → Athan & sounds. Play a test sound on the speakers you choose.
+  It plays over any music, which then carries on at its own volume. Athan times come next.
+
 ## 0.34.0
 
 - Notifications are now personal. Each person chooses the devices they follow (Settings →
