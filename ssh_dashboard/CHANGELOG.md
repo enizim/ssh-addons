@@ -1,5 +1,60 @@
 # What's new
 
+## 0.45.6
+
+- Usage: the empty-room AC card recognises more of the automations that switch an AC off.
+
+## 0.45.5
+
+- Air conditioners: changing the temperature of an AC that was switched on with its remote now reaches the AC.
+
+## 0.45.4
+
+- Air conditioners: right after you switch one on or off in the app, its tile shows that straight away instead of waiting for the power reading.
+
+## 0.45.3
+
+- Air conditioners: the controls of an AC switched on with its remote now say it is running, instead of showing Off.
+
+## 0.45.2
+
+- Devices: an air conditioner's running sensor is now picked from a list in its settings, so its tile shows whether it is really on.
+
+## 0.45.1
+
+- Usage: the empty-room AC card now also works for air conditioners controlled by infrared.
+
+## 0.45.0
+
+- Usage: a new card shows how long each AC ran this month while nobody was in its room, how much electricity that used, and how often it was switched off automatically. It appears for rooms with a presence sensor chosen in Settings → Rooms.
+
+## 0.44.2
+
+- Rooms: you now choose which sensor tells a room's tile that someone is there (Settings → Rooms), so motion sensors no longer make it flicker.
+
+## 0.44.1
+
+- Home: an open door with a smart lock now shows once, as open, instead of once as open and once as unlocked.
+
+## 0.44.0
+
+- Rooms: a room with a presence sensor now says "Someone here" on its tile while someone is in it.
+
+## 0.43.2
+
+- A dashboard left open, such as a wall tablet, now loads the new version by itself after an update.
+
+## 0.43.1
+
+- Doorbell: when someone rings, every phone gets a "Someone is at the door" alert, and every open dashboard
+  shows the doorbell camera with a chime.
+
+## 0.43.0
+
+- Cameras: a camera can now have an Events tab with pictures of the people and animals it recorded. Open one
+  and press "Watch from here" to see the recording from that moment. It is off until turned on in the
+  camera's settings ("Show Events"): useful on a doorbell or a corridor, less so on a camera facing the street.
+
 ## 0.42.0
 
 - Energy: the forecast for the month now includes the electricity company's meter fee (15 SAR plus VAT by
